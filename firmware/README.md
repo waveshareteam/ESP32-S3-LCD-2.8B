@@ -1,14 +1,16 @@
-# ESP32-S3-LCD-2.8B and ESP32-S3-Touch-LCD-2.8B firmware
+# ESP32-S3-Touch-LCD-2.8 and ESP32-S3-LCD-2.8 factory firmware
 
-| File | Description | Flash offset |
-| --- | --- | --- |
-| [ESP32-S3-Touch-LCD-2.8B_FactoryOnly_20241025.bin](ESP32-S3-Touch-LCD-2.8B_FactoryOnly_20241025.bin) | Factory firmware for ESP32-S3-Touch-LCD-2.8B (2024-10-25) | `0x0` |
-| [ESP32-S3-LCD-2.8B_FactoryOnly_20250124.bin](ESP32-S3-LCD-2.8B_FactoryOnly_20250124.bin) | Factory firmware for ESP32-S3-LCD-2.8B (2025-01-24) | `0x0` |
+Select the firmware for your board model.
+
+| File | Board model | Version date | Flash offset |
+| --- | --- | --- | --- |
+| [ESP32-S3-Touch-LCD-2.8_FactoryOnly_20260523.bin](ESP32-S3-Touch-LCD-2.8_FactoryOnly_20260523.bin) | ESP32-S3-Touch-LCD-2.8 (touch) | 2026-05-23 | `0x0` |
+| [ESP32-S3-LCD-2.8_FactoryOnly_20250124.bin](ESP32-S3-LCD-2.8_FactoryOnly_20250124.bin) | ESP32-S3-LCD-2.8 (non-touch) | 2025-01-24 | `0x0` |
 
 ```sh
-esptool --chip esp32s3 write-flash 0x0 ESP32-S3-LCD-2.8B_FactoryOnly_20250124.bin
+esptool --chip esp32s3 write-flash 0x0 ESP32-S3-Touch-LCD-2.8_FactoryOnly_20260523.bin
 ```
 
 ```sh
-esptool --chip esp32s3 write-flash 0x0 ESP32-S3-Touch-LCD-2.8B_FactoryOnly_20241025.bin
+esptool --chip esp32s3 write-flash 0x0 ESP32-S3-LCD-2.8_FactoryOnly_20250124.bin
 ```
